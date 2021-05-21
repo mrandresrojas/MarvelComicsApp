@@ -3,10 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './shared/component/header/header.component';
+import { FormSearchComponent } from './shared/component/form-search/form-search.component';
+import { FooterComponent } from './shared/component/footer/footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FormSearchComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
