@@ -1,1 +1,8 @@
-<p>comic-list works!</p>
+<div *ngFor="let comic of allComics | async">
+    {{comic?.title}}
+    <ul>
+        <li *ngFor="let url of comic.urls">
+            {{url?.url}}
+        </li>
+    </ul>
+</div>

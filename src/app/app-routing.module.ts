@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ComicListComponent} from 'src/app/component/pages/comics/comic-list/comic-list.component'
 
 const routes: Routes = [
   {
@@ -14,13 +15,15 @@ const routes: Routes = [
       import('./component/pages/home/home.module').then(m => m.HomeModule)
   }, 
   {
-    path: 'Comic-list',
+    path: 'comic-list',
     loadChildren: () => import('./component/pages/comics/comic-list/comic-list.module').then(m => m.ComicListModule)
   }, 
   {
-    path: 'Comic-details/:id',
+    path: 'comic-details/:id',
     loadChildren: () => import('./component/pages/comics/comic-details/comic-details.module').then(m => m.ComicDetailsModule)
-  }];
+  },
+  ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
