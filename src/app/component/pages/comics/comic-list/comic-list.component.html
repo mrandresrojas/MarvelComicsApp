@@ -4,5 +4,8 @@
         <li *ngFor="let url of comic.urls">
             {{url?.url}}
         </li>
+        <li *ngFor="let image of comic.images">
+            <img [src]="image.path+'.'+image.extension" alt="">
+        </li>
     </ul>
 </div>
