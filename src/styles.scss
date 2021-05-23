@@ -1,4 +1,14 @@
 
+  .logo{
+    margin-top: 0px;
+    max-width: 100px;
+    display:block;
+
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+  
   .card{
     box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 3px rgba(0,0,0,.24);
     transition: all 0.2 ease-in-out;
@@ -19,12 +29,12 @@
   }
   p {
     margin-top: -3px;
-    color: #44454d;
+    color: #000000;
     padding: 10px;
   }
  h5 {
     margin-top: -3px;
-    color: #44454d;
+    color: #000000;
     padding: 10px;
   }
 
@@ -35,23 +45,16 @@
     &:hover{
         opacity:1} 
  }
-  .comic{
-    max-width: 350px;
-    height: auto;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 10px;
-    background: linear-gradient(to bottom right, #B71C1C, #212121);
-    }
-
-  
-
-
-    .card-inner{
+      .card-inner{
       padding: 10px;
   }
-
-  body {  background: #690000; color: rgba(255, 255, 255, 0.25); text-align: center; margin: 0 }
+  
+  
+  body { 
+    background-color: #ed1d24a1;
+    background-image: linear-gradient(180deg, #ed1d24a1 0%, #212121 100%);
+  text-align: center; 
+  margin: 0 }
 
 .title {
 	text-transform: uppercase;
@@ -65,21 +68,23 @@
 	left: 50%;
 	width: 40em;
 	margin: 0 0 0 -20em;
+  color:#FFFFFF;
   
   span {
 
-  	font: 700 4em/1 "Oswald", sans-serif;
+  	font: 700 4em/1 "Oswald", impact;
   	letter-spacing: 0;
   	padding: .25em 0 .325em;
 	  display: block;
 	  margin: 0 auto;
   	text-shadow: 0 0 0 px rgb(255, 255, 255);
+    
 
 
 }
 }
 .container{
-  margin-top: 300px; 
+  margin-top: 200px; 
  }
 
 

@@ -5,7 +5,7 @@ import { ComicListComponent} from 'src/app/component/pages/comics/comic-list/com
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'comic-list',
     pathMatch: 'full',
   },
 
