@@ -1,11 +1,19 @@
-<div *ngFor="let comic of allComics | async">
-    {{comic?.title}}
-    <ul>
-        <li *ngFor="let url of comic.urls">
-            {{url?.url}}
-        </li>
-        <li *ngFor="let image of comic.images">
-            <img [src]="image.path+'.'+image.extension" alt="">
-        </li>
-    </ul>
+<p class="title"><span>
+        Lista de comics 
+    </span>
+<div class="container">
+<div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" *ngFor="let comic of allComics | async">
+        <div class="card">
+            <div class="card-body">
+
+                <img src="{{comic.thumbnail.path}}.{{comic.thumbnail.extension}}" class="card-img-top"
+                    alt="{{comic.tilte}}">
+                <h5 class="card-title">{{comic?.title}}</h5>
+                <p class="card-text">{{comic?.description}}</p>
+
+            </div>
+        </div>
+    </div>
+</div>
 </div>

@@ -4,9 +4,11 @@ export interface Comic{
     title: string;
     issueNumber:string;
     variantDescription: string;
-    descrption:string;
+    description:string;
     urls?:Url[]
     images?:Image[]
+    path: string;
+    extension:string;
 
 
 }
