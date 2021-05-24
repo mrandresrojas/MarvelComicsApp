@@ -85,7 +85,14 @@
 }
 .container{
   margin-top: 200px; 
- }
 
-
+}
+.navbar-text{
+  
+  position: relative;
+ 
+  left: 50%;
+  transform: translatex(-50%);
+  
+}
     
